@@ -178,7 +178,7 @@
         </div>
         <div class="col_grid">
           <div class="div_item_center">
-            <img src="images/cat1.jpg" alt="Image 1">
+            <img src="images/blur_sec1.jpg" data-src="images/sec1.jpg" alt="Image 1">
           </div>
         </div>
       </div>
@@ -194,7 +194,7 @@
         </div>
         <div class="col_grid pull_left_grid">
           <div class="div_item_center">
-            <img src="images/cat2.jpg" alt="Image 2">
+            <img src="images/blur_sec2.jpg" data-src="images/sec2.jpg" alt="Image 2">
           </div>
         </div>
       </div>
@@ -210,7 +210,7 @@
         </div>
         <div class="col_grid">
           <div class="div_item_center">
-            <img src="images/cat3.jpg" alt="Image 3">
+            <img src="images/blur_sec3.jpg" data-src="images/sec3.jpg" alt="Image 3">
           </div>
         </div>
       </div>
@@ -243,6 +243,18 @@
       </div>
     </div>
   </section>
+  
+  <script>
+    function image_function() {
+      var load_real_image = document.getElementsByTagName('img');
+      for (var i = 0; i < load_real_image.length; i++) {
+        if(load_real_image[i].getAttribute('data-src')) {
+        load_real_image[i].setAttribute('src',load_real_image[i].getAttribute('data-src'));
+        } 
+      }
+    }
+    window.onload = image_function;
+  </script>
 
 </body>
 </html>

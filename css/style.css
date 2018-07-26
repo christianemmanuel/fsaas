@@ -432,12 +432,19 @@ label {
     user-select: none;
     line-height: 1em;
     height: 50px;
+    z-index: 1;
     font-size: 17px;
+    position: relative;
 }
 .btn.btn_blue {
     background-color: #dbebf4;
     color: #116ca3;
     border: 1px solid #8cb9d5;
+}
+.btn.btn_blue:hover {
+    -webkit-box-shadow: 0 3px 6px rgba(128, 128, 128, 0.3);
+    -moz-box-shadow: 0 3px 6px rgba(128, 128, 128, 0.3);
+    box-shadow: 0 3px 6px rgba(128, 128, 128, 0.3);
 }
 .main_wrapper {
     position: relative;
@@ -766,6 +773,9 @@ header.homepage_hero_header {
 .fsaas_process_detail {
     display: block;
     padding: 30px 40px;
+}
+.fsaas_process_detail h2 {
+    margin-bottom: 25px;
 }
 .fsaas_process_detail p {
     font-size: 20px;
