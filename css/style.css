@@ -655,9 +655,22 @@ header.homepage_hero_header {
     display: block;
     top: 30%;
     left: 1.3rem;
-    font-family: FontAwesome;
-    content: "\f071";
-    font-size: 15px;
+    content: "i";
+    width: 19px;
+    height: 19px;
+    border-radius: 30px;
+    background-color: #717171;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 300;
+}
+.alert_blue:before {
+    background-color: #106ba3;
+}
+.alert_orange:before {
+    background-color: #bf7326;
 }
 .alert_blue {
     color: #004085;
