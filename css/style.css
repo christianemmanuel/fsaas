@@ -581,36 +581,48 @@ label {
     color: #4a4a4a;
     padding: 0.7rem 0.6rem;
 }
-@media (min-width: 768px) {
-    .nmain_navbar>.container {
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    }
-    .main_navbar_menu {
-        display: -ms-flexbox!important;
-        display: flex!important;
-        -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-    }
-    .main_navbar_menu ul {
-        -ms-flex-direction: row;
-        flex-direction: row;
-        position: relative;
-        top: -5px;
-    }
-    .main_navbar_toggle {
+ .nmain_navbar>.container {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+.main_navbar_menu {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+.main_navbar_menu ul {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: relative;
+    top: -5px;
+}
+@media (min-width: 480px) {
+   
+    /* .main_navbar_toggle {
         display: none;
-    }
+    } */
 }
 
 .main_navbar_brand {
     display: inline-block;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
     margin-right: 1rem;
-    font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+    margin: 0.3125rem 0;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 37px;
+    vertical-align: middle;
+    background-size: 200px;
+    font-size: 0;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+}
+.main_navbar_brand:hover {
+    opacity: 0.8;
 }
 .main_navbar_brand img {
     max-width: 200px;
@@ -769,6 +781,8 @@ header.homepage_hero_header {
 }
 .fsaas_process_wrapper img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .fsaas_process_detail {
     display: block;
@@ -793,8 +807,209 @@ header.homepage_hero_header {
     margin-top: 0;
 }
 /*************** MAIN MENU : END ****************/
-
-
+@media only screen and (max-width: 991px) {
+    h1 {
+        font-size: 37px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .homepage_hero_detail p {
+        font-size: 18px;
+    }
+    .homepage_hero_header .flex_col_2:first-child {
+        margin-bottom: 25px;
+    }
+    .subscribe_form .form_group input {
+        width: 340px;
+        height: 45px;
+        font-size: 17px;
+        padding: 5px 15px;
+    }
+    .btn {
+        height: 45px;
+        font-size: 16px;
+        padding: 11px 20px;
+    }
+    .subscription_footer h2 {
+        margin-bottom: 22px;
+    }
+    section.section {
+        padding: 55px 0;
+    }
+    .subscription_footer {
+        margin-bottom: 55px;
+    }
+    .company_logo_wrapper h3 {
+        font-size: 21px;
+    }
+    .grid_3_3 {
+        -webkit-grid-gap: 25px;
+        -moz-grid-gap: 25px;
+        grid-gap: 25px;
+    }
+    .company_logo_wrapper {
+        max-width: 670px;
+    }
+    .company_logo_wrapper img {
+        max-width: 126px;
+    }
+    .fsaas_process_detail h2 {
+        margin-bottom: 20px;
+    }
+    .fsaas_process_detail p {
+        font-size: 18px;
+    }
+    .fsaas_process_detail {
+        padding: 20px 35px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .grid_3_3 {
+        -webkit-grid-gap: 30px 15px;
+        -moz-grid-gap: 30px 15px;
+        grid-gap: 30px 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .fsaas_process_wrapper .grid_2_3 {
+        display: block;
+        margin-bottom: 20px;
+        -webkit-box-shadow: 0 0 11px 1px rgba(109, 109, 109, 0.2);
+        -moz-box-shadow: 0 0 11px 1px rgba(109, 109, 109, 0.2);
+        box-shadow: 0 0 11px 1px rgba(109, 109, 109, 0.2);
+    }
+    .pull_right_grid,
+    .pull_left_grid {
+        left: 0;
+    }
+    .fsaas_process_wrapper {
+        background-color: #ffffff;
+        padding: 0 20px;
+    }
+    .fsaas_process_detail {
+        background-color: #f9f9f9;
+        padding: 25px;
+    }
+    header.homepage_hero_header {
+        padding: 40px 0 30px 0;
+    }
+    .subscribe_form {
+        margin-top: 70px;
+    }
+    section.mobile_section {
+        padding: 0;
+    }
+    .subscription_footer {
+        margin-bottom: 0;
+    }
+    .fsaas_process_detail p {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    h1 {
+        font-size: 29px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .homepage_hero_detail p {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .main_navbar_brand {
+        background-image: url('../images/favicon.png');
+        width: 35px;
+        height: 35px;
+        background-size: 35px;
+    }
+    .main_navbar_menu ul li {
+        font-size: 15px;
+        margin: 0 7px;
+    }
+    .main_navbar_menu ul li a {
+        padding: 0.7rem 0.4rem;
+    }
+    header.homepage_hero_header {
+        padding: 30px 0;
+    }
+    .alert {
+        font-size: 14px;
+    }
+    .company_logo_wrapper img {
+        max-width: 100px;
+    }
+    .company_logo_wrapper h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .grid_3_3 {
+        -webkit-grid-gap: 25px 10px;
+        -moz-grid-gap: 25px 10px;
+        grid-gap: 25px 10px;
+    }
+    .btn {
+        height: 43px;
+        font-size: 15px;
+        padding: 10px 19px;
+    }
+    .subscribe_form .form_group input {
+        width: 100%;
+        height: 43px;
+        font-size: 16px;
+    }
+    .subscribe_form {
+        margin-top: 40px;
+    }
+    .subscribe_form .sr-only {
+        position: relative;
+        width: auto;
+        height: auto;
+        font-style: normal;
+        font-size: 16px;
+        display: block;
+        margin-bottom: 8px;
+    }
+     .subscribe_form  .btn {
+        font-size: 0;
+        margin-top: 23px;
+        width: 47px;
+     }
+     .subscribe_form  .btn:before {
+        position: absolute;
+        display: block;
+        content: "\f1d8";
+        font-family: FontAwesome;
+        font-size: 16px;
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+     }
+     .subscription_footer .form_row {
+        max-width: 268px;
+        margin: auto;
+        text-align: left;
+     }
+     .alert .flexbox_container_auto {
+        display: block;
+     }
+     .img_alert {
+        padding: 0 0 10px 0;
+    }
+}
 
 
 
