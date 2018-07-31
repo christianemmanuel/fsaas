@@ -741,12 +741,35 @@ header.homepage_hero_header {
     grid-gap: 45px;
 }
 .grid_2_3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    -webkit-grid-gap: 0px;
-    -moz-grid-gap: 0px;
-    grid-gap: 0px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.col_grid {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
 }
 .pull_right_grid {
     position: relative;
@@ -886,6 +909,9 @@ header.homepage_hero_header {
         -moz-box-shadow: 0 0 11px 1px rgba(109, 109, 109, 0.2);
         box-shadow: 0 0 11px 1px rgba(109, 109, 109, 0.2);
     }
+    .fsaas_process_wrapper .grid_2_3 .col_grid {
+        width: 100%;
+    }
     .pull_right_grid,
     .pull_left_grid {
         left: 0;
@@ -999,9 +1025,9 @@ header.homepage_hero_header {
         margin: auto;
      }
      .subscription_footer .form_row {
-        max-width: 271px;
-        margin: auto;
+        width: 271px;
         text-align: left;
+        margin: auto;
      }
      .alert .flexbox_container_auto {
         display: block;
